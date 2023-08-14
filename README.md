@@ -27,14 +27,11 @@ run.sh
         - This is the mapper, which maps Tracking Plan with the event present.
         - Hence, the index for this database is: [tracker_id, event_id], since that will be the unique one.
 
-2. APIs are integrated in such a way that:
-    1. POST /tracking-plan:
-        - Creates a new plan.
-        - Validation of track_plan payload
-        - After creating a plan, 
-            - it will trigger create event function call internally.
-        - Mantaining a boolean variable: `is_active` in `track_plan` collection, which will be set to true when the event is create and mapped to the tracker.
-    2. GET /tracking-plan
-    3 . POST /events
-        - We are keeping a tracking_id field compulsory over here, since each event 
-        should be associated to atleast one tracking_plan.
+2. 2 Microservice type folders are created:
+    1. event (Handles all the event related changes Create | Update | GET)
+    2. tracker (Handles all the tracker related changes Create | Update | GET)
+
+3. Folder structure:
+    1. `app` Folder contains APIs
+    2. `database` Folder contains DB Schema and indexes for all collections
+    3. `tests` folder contains all the test cases
