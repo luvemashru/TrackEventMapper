@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "eventTracker"
+version = "0.1.0"
+description = ""
+authors = ["luvemashru <luvemashru@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+sanic = "*"
+marshmallow = "*"
+marshmallow-jsonschema = "*"
+pymongo = "*"
+pytest = "*"
+pytest-sanic = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
