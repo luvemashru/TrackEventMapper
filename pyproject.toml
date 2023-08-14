@@ -13,6 +13,7 @@ marshmallow-jsonschema = "*"
 pymongo = "*"
 pytest = "*"
 pytest-sanic = "*"
+sanic_cors = "*"
 
 [build-system]
 requires = ["poetry-core"]
