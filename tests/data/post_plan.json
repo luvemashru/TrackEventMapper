@@ -1,0 +1,61 @@
+{ 
+	"tracking_plan": {
+        "display_name": "Tracking 7-1",
+        "rules": {
+            "events": [
+                {
+                    "name": "Order Viewed",
+                    "description": "Whose order viewed",
+                    "rules": {
+                        "$schema": "http://json-schema.org/draft-07/schema#",
+                        "type": "object",
+                        "properties": {
+                           "type": "object",
+                           "properties": {
+                             "product": {
+                                "type": ["string"]
+                              },
+                              "price": {
+                                "type": ["number"]
+                              },
+                              "currency": {
+                                "type": ["string"]
+                              }
+                          }, 
+                          "required": [
+                            "product",
+                            "price",
+                            "currency"
+                         ]
+                    }}
+                },
+                {
+                    "name": "Order Viewed 6",
+                    "description": "Whose order viewed",
+                    "rules": {
+                        "$schema": "http://json-schema.org/draft-07/schema#",
+                        "type": "object",
+                        "properties": {
+                           "type": "object",
+                           "properties": {
+                             "product": {
+                                "type": ["string"]
+                              },
+                              "price": {
+                                "type": ["number"]
+                              },
+                              "currency": {
+                                "type": ["string"]
+                              }
+                          }, 
+                          "required": [
+                            "product",
+                            "price",
+                            "currency"
+                         ]
+                    }}
+                }
+            ]
+        }
+    }
+}
